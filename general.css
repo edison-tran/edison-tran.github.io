@@ -20,7 +20,7 @@ h2 {
     color:rgb(236, 100, 100)
 }
 h3 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16pt;
     color:rgb(187, 139, 231)
 }
@@ -28,12 +28,12 @@ h3 {
 h4 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14pt;
-    color:rgb(139, 205, 231)
+    color:rgb(245, 248, 80)
 }
 
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14pt;
+    font-size: 12pt;
     color: blanchedalmond;
 
 }
