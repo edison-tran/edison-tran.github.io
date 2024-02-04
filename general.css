@@ -48,3 +48,17 @@ a:active {
 a:visited {
     color: blue;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ffffff;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
