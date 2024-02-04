@@ -14,6 +14,22 @@ h1 {
     font-size: 24pt;
     color:antiquewhite
 }
+h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+    font-size: 18pt;
+    color:rgb(236, 100, 100)
+}
+h3 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16pt;
+    color:rgb(187, 139, 231)
+}
+
+h4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+    color:rgb(139, 205, 231)
+}
 
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
