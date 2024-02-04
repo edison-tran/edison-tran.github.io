@@ -48,7 +48,7 @@ a:hover {
 a:active {
     font-size: 22pt;
     color: rgb(212, 154, 47);
-    text-decoration:wavy;
+    text-decoration:overline;
 }
 a:visited {
     color: blue;
