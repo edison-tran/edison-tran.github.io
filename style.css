@@ -43,10 +43,12 @@ p {
 a:hover {
     font-size: 22pt;
     color: rgb(235, 45, 45);
+    text-decoration: underline;
 }
 a:active {
     font-size: 22pt;
     color: rgb(212, 154, 47);
+    text-decoration:wavy;
 }
 a:visited {
     color: blue;
