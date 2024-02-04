@@ -55,12 +55,12 @@ table {
 }
 
 tr {
-    border-top: 2px solid #000000;
+    border-top: 1px solid #000000;
 }
 
 td {
     padding: 10px;
     text-align: left;
-    border-left:2px solid #000000;
+    border-left:1px solid #000000;
 }
 
