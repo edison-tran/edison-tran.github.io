@@ -4,3 +4,19 @@ function promptName() {
         document.getElementById("nameDisplay").innerText = "Your name is: " + userName;
     } 
 }
+
+document.getElementById('imageLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior of following the link
+    enlargeImage();
+});
+
+function enlargeImage() {
+    var img = document.getElementById('clickableImage');
+    if (img.style.width === '350px') {
+        img.style.width = '500px';
+        img.style.height = '450px';
+    } else {
+        img.style.width = '350px';
+        img.style.height = '300px';
+    }
+}
