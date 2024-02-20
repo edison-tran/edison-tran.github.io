@@ -6,7 +6,7 @@ function promptName() {
 }
 
 document.getElementById('imageLink').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default behavior of following the link
+    event.preventDefault(); 
     enlargeImage();
 });
 
