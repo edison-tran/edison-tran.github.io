@@ -5,8 +5,7 @@ function promptName() {
     } 
 }
 
-document.getElementById('imageLink').addEventListener('click', function(event) {
-    event.preventDefault(); 
+document.getElementById('clickableImage').addEventListener('click', function() {
     enlargeImage();
 });
 
