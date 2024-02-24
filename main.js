@@ -6,10 +6,10 @@ function promptName() {
 }
 
 document.getElementById('clickableImage').addEventListener('click', function() {
-    enlargeImage();
+    toggleImageSize();
 });
 
-function enlargeImage() {
+function toggleImageSize() {
     var img = document.getElementById('clickableImage');
     if (img.style.width === '350px') {
         img.style.width = '500px';
