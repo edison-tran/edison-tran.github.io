@@ -11,7 +11,7 @@ document.getElementById('clickableImage').addEventListener('click', function() {
 
 function toggleImageSize() {
     var img = document.getElementById('clickableImage');
-    if (img.style.width === '350px') {
+    if (img.style.width === '350px' || img.style.width === '') {
         img.style.width = '500px';
         img.style.height = '450px';
     } else {
@@ -19,3 +19,4 @@ function toggleImageSize() {
         img.style.height = '300px';
     }
 }
+
