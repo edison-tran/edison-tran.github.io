@@ -70,6 +70,20 @@ td {
     border-right:2px solid #000000;
 }
 
+.image-container {
+    text-align: right;
+}
+
+.clickable-image {
+    width: 200px; 
+    transition: transform 0.2s; 
+    cursor: pointer;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1); 
+}
+
 .navbar {
     overflow: hidden;
     background-color: #333;

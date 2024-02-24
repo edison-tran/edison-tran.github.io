@@ -74,7 +74,9 @@
         <button onclick="promptName()">Enter your name</button>
         <div id="nameDisplay"></div>
 
-        <img id="clickableImage" src="image.jpg" width="350px" height="300px">
+        <div class="image-container">
+            <img src="image.jpg" alt="Clickable Image" class="clickable-image" onclick="enlargeImage(this)">
+        </div>
     </a>
     </body>
 </html>

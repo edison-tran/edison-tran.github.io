@@ -5,18 +5,11 @@ function promptName() {
     } 
 }
 
-document.getElementById('clickableImage').addEventListener('click', function() {
-    toggleImageSize();
-});
-
-function toggleImageSize() {
-    var img = document.getElementById('clickableImage');
-    if (img.style.width === '350px' || img.style.width === '') {
-        img.style.width = '500px';
-        img.style.height = '450px';
+function enlargeImage(image) {
+    if (image.style.transform === "scale(1.1)") {
+        image.style.transform = "scale(1)"; 
     } else {
-        img.style.width = '350px';
-        img.style.height = '300px';
+        image.style.transform = "scale(1.1)"; 
     }
 }
 
