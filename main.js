@@ -6,7 +6,7 @@ function promptName() {
 }
 
 function enlargeImage(image) {
-    if (image.style.transform === "scale(1.1)") {
+    if (image.style.transform === "scale(1.1)") { //use if-else logic to ensure image action is performed
         image.style.transform = "scale(1)"; 
     } else {
         image.style.transform = "scale(1.1)"; 
