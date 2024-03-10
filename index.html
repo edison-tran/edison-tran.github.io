@@ -137,26 +137,46 @@
         <section id="contact">
             <h1 class="title">Get in Touch</h1>
             <form id="contactForm">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <div class="first-column">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="device">Device Type:</label>
+                    <select id="device" name="device">
+                        <option value="desktop">Desktop</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="phone">Phone</option>
+                        <option value="tablet">Tablet</option>
+                    </select>
+                </div>
                 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <div class="second-column">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="interest">Interest:</label>
+                    <input type="text" id="interest" name="interest">
+                    
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience">
+                </div>
                 
-                <label for="device">Device Type:</label>
-                <select id="device" name="device">
-                    <option value="desktop">Desktop</option>
-                    <option value="laptop">Laptop</option>
-                    <option value="phone">Phone</option>
-                    <option value="tablet">Tablet</option>
-                </select>
-                
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <div class="third-column">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </div>
                 
                 <button type="button" id="submitBtn">Submit</button>
                 <button type="button" id="clearBtn">Clear</button>
             </form>
         </section>
+        
     </body>
  </html>

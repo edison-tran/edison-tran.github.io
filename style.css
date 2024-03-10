@@ -336,6 +336,7 @@ td {
 
 #extras {
   position: relative;
+  height: 50vh;
 }
 
 .extras-sub-title {
@@ -373,7 +374,7 @@ article .icon {
 
 #projects {
   position: relative;
-  height: 70vh;
+  height: 60vh;
 }
 
 .color-container {
@@ -404,39 +405,50 @@ article .icon {
   height: 35vh;
 }
 
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+#contactForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    padding-bottom: 80px;
 }
 
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+.first-column,
+.second-column,
+.third-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.contact-info-container p {
-  font-size: larger;
+.first-column {
+    grid-column: 1;
 }
 
-.contact-icon {
-  cursor: default;
+.second-column {
+    grid-column: 2;
 }
+
+.third-column {
+    grid-column: 3;
+}
+
+#contactForm label {
+    font-weight: bold;
+}
+
+#submitBtn,
+#clearBtn {
+    width: 60px;
+    margin-top: 10px; 
+}
+
 
 .email-icon {
   height: 2.5rem;
 }
 
 footer {
-  height: 15vh;
+  height: 30vh;
   margin: 0 1rem;
 }
 
