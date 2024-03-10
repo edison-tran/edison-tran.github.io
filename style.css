@@ -24,22 +24,6 @@ a,
 .btn {
   transition: all 300ms ease;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-tr {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-  	border-left: 2px solid black
-}
-
-td {
-    padding: 10px;
-    text-align: left;
-    border-right:2px solid #000000;
-}
 
 nav,
 .nav-links {
@@ -75,7 +59,11 @@ a:hover {
 }
 
 .clickable-image { 
-    width: 200px; transition: transform 0.2s; cursor: pointer; 
+    width: 300px;
+    height: 300px; 
+    transition: transform 0.2s; 
+    cursor: pointer;
+    border-radius: 50%; 
 } 
 
 .clickable-image:hover { 
@@ -326,6 +314,22 @@ section {
   margin: auto 0;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  	border-left: 2px solid black
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-right:2px solid #000000;
+}
 
 #experience {
   position: relative;
