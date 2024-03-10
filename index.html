@@ -1,46 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            ITM780 - Lab 6
-        </title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <div class="navbar">
-            <a href="index.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Home</a> 
-            <a href="#education.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Education</a> <!--Use of # in the anchor tag is to target specific elements within the current document-->
-                <class="dropdown">
-                    <a href="#extras" class="dropbtn" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Extra-Curriculars</a>
-                    <div class="dropdown-content"> 
-                        <a href="#extra 1">Tchokball</a>
-                        <a href="#extra 2">DECA</a>
-                    </div>
-        </div>
-        <a name="education"><h1>Education</h1> </a>
-            <ul>
-                <li>Riverdale Collegiate Institute | September 2016 - July 2020</li>
-                <li>Toronto Metropolitan University | September 2020 - April 2024</li>
+<html >
+  <head>
+      <title>ITM780 - Lab 6</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <script src="main.js"></script>
+  </head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Edison Tran</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#extras">Extra-Curriculars</a></li>
+                <li><a href="#extras">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        <h2> Program Description</h2>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Edison Tran</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#extras" onclick="toggleMenu()">Extra-Curricular</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+      <div class="image-container">
+            <img src="image.jpg" alt="Clickable Image" class="clickable-image" onclick="enlargeImage(this)">
+      </div>
+        <div class="section__text">
+          <p class="section__text__p1"> <h1>About me </h1>
+          <br> Name: Edison Tran</br>
+          <br> Date of Birth: March 22, 2002</br>
+          <br> Address: 123 Street</br>
+          <br> Email: edison.tran@torontomu.ca</br>
+          <br> Phone Number: 123-456-7891</br>
+          <br> Hobbies: Biking, Rock Climbing, Films</br>
+      	</p>
+            
+            <div class="btn-container">
+                <button>
+                    Download CV
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="section-container">
+            <div class="section__pic-container">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Education</h3>
+                        <p>Riverdale Collegiate <br>2016-2020</p>
+                    </div>
+                    <div class="details-container">
+                        <h3>Education</h3>
+                        <p>B.Comm. Bachelors Degree<br>2020-2024 </p>
+                    </div>
+                </div>
+                <div class="text-container">
             <p>
-                At TMU, the Business Technolgy Management program is able to provide students with both core business concepts,
-                coupled with technical capabilities.<br> Reinforcement and an understanding of how business processes are able to 
-                work cohesively with the necessary technology solutions in order to establish<br> progression in terms of these
-                two aspects. Essentially, technological advancements capitalize on the business processes and ideas that are
-                presented to them.<br> One course that was a foundational course, in that it was extremely useful in realizing
-                the future of this sector was ITM-200, which was Fundamentals to Programming.<br> What was so important about
-                this course was, seeing that BTM covers both business and technological aspects, it helped me realize that 
-                I prefer learning about the<br>technical and coding aspects of the sector.
+                At TMU, the Business Technolgy Management program is able to provide students with both core business concepts,coupled with technical capabilities. Reinforcement and an understanding of how business processes are able to work cohesively with the necessary technology solutions in order to establish progression in terms of these two aspects. Essentially, technological advancements capitalize on the business processes and ideas that are presented to them. One course that was a foundational course, in that it was extremely useful in realizing the future of this sector was ITM-200, which was Fundamentals to Programming. What was so important about this course was, seeing that BTM covers both business and technological aspects, it helped me realize that I prefer learning about the technical and coding aspects of the sector.
             </p>
-        <h3>Educational Awards</h3>
-            <ol>
-                <li>Dean's list</li>
-                <li>Honour's list</li>
-                <li>Entrance Scholarship</li>
-            </ol>
-        <a name="extras"> <h4>Extra-Curriculars Activities</h4></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="extras">
+        <h1 class="title">Extra-Curriculars</h1>
         <table>
             <tr>
                 <td>
@@ -50,7 +90,7 @@
                 </td>
                 <td>
                     <div>
-                        was introduced to me during middle school; due to its natural intensity and high-pace
+                        Introduced to me during middle school; due to its natural intensity and high-pace
                         style, I enjoyed it so much that I joined the after school program.
                     </div>
                 </td>
@@ -63,20 +103,48 @@
                 </td>
                 <td>
                     <div>
-                        was an extra-curricular that I had been made aware of during the later half of high school.
+                        An extra-curricular that I had been made aware of during the later half of high school.
                         Like most students, I had joined DECA in hopes to strengthen my chances of getting into
                         certain university programs, which I ended up getting accepted into.
                     </div>
                 </td>
             </tr>
         </table>
-        <br>
-        <button onclick="promptName()">Enter your name</button>
-        <div id="nameDisplay"></div>
+               
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
 
-        <div class="image-container">
-            <img src="image.jpg" alt="Clickable Image" class="clickable-image" onclick="enlargeImage(this)">
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+
+    </section>
+    <section id="contact">
+        <h1 class="title">Get in Touch</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />s
+                <p><a href="mailto:examplemail@gmail.com">edison.tran@torontomu.ca</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
         </div>
-    </a>
-    </body>
-</html>
+    </section>
+ 
