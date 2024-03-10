@@ -17,7 +17,8 @@ html {
 }
 
 p {
-  color: rgb(0,0,0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 a,
@@ -33,7 +34,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 15vh;
 }
 
 .nav-links {
@@ -129,7 +130,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -158,7 +159,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 70vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -171,14 +172,14 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   height: 80vh;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   margin: auto 0;
 }
 
@@ -309,8 +310,8 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   margin: auto 0;
 }
 
@@ -329,20 +330,22 @@ td {
     padding: 10px;
     text-align: left;
     border-right:2px solid #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
 
-#experience {
+#extras {
   position: relative;
 }
 
-.experience-sub-title {
+.extras-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.extras-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -370,6 +373,7 @@ article .icon {
 
 #projects {
   position: relative;
+  height: 70vh;
 }
 
 .color-container {
@@ -397,7 +401,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 35vh;
 }
 
 .contact-info-upper-container {
@@ -432,7 +436,7 @@ article .icon {
 }
 
 footer {
-  height: 26vh;
+  height: 15vh;
   margin: 0 1rem;
 }
 
