@@ -20,4 +20,26 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
-  
+  document.addEventListener('DOMContentLoaded', function() {
+    var submitBtn = document.getElementById('submitBtn');
+    var clearBtn = document.getElementById('clearBtn');
+    var form = document.getElementById('contactForm');
+
+    submitBtn.addEventListener('click', function() {
+        var formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            device: document.getElementById('device').value,
+            gender: document.getElementById('gender').value,
+            interest: document.getElementById('interest').value,
+            experience: document.getElementById('experience').value,
+            message: document.getElementById('message').value
+        };
+
+        console.log(formData);
+    });
+
+    clearBtn.addEventListener('click', function() {
+        form.reset();
+    });
+});
