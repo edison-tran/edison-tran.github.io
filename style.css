@@ -71,7 +71,7 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 .image-container { 
-    text-align: right; 
+    text-align: left; 
 }
 
 .clickable-image { 
@@ -326,7 +326,6 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
 
 #experience {
   position: relative;
