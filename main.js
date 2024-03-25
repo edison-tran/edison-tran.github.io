@@ -100,6 +100,21 @@ document.addEventListener('click', function(event) {
     }
 });
 
-
 updateKeyboardCase();
 
+let fontSize = 16; 
+
+function decreaseFontSize() {
+  fontSize -= 2; 
+  applyFontSize();
+}
+
+function increaseFontSize() {
+  fontSize += 2; 
+  applyFontSize();
+}
+
+function applyFontSize() {
+  const content = document.getElementById('magnifier');
+  content.style.fontSize = fontSize + 'px';
+}
