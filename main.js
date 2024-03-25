@@ -43,3 +43,63 @@ function toggleMenu() {
         form.reset();
     });
 });
+
+
+
+let capsLock = false;
+
+function toggleCapsLock() {
+    capsLock = !capsLock;
+    updateKeyboardCase();
+}
+
+function updateKeyboardCase() {
+    const buttons = document.querySelectorAll('#keyboard .keyboard-row button');
+    buttons.forEach(button => {
+        const char = button.textContent;
+        if (capsLock && char.match(/[a-z]/)) {
+            button.textContent = char.toUpperCase();
+        } else if (!capsLock && char.match(/[A-Z]/)) {
+            button.textContent = char.toLowerCase();
+        }
+    });
+}
+
+function showKeyboard() {
+    var keyboard = document.getElementById('keyboard');
+    keyboard.classList.remove('hidden');
+}
+
+function hideKeyboard() {
+    var keyboard = document.getElementById('keyboard');
+    keyboard.classList.add('hidden');
+}
+
+function insertCharacter(char) {
+    var textarea = document.getElementById('message');
+    var cursorPos = textarea.selectionStart;
+    var textBefore = textarea.value.substring(0, cursorPos);
+    var textAfter = textarea.value.substring(textarea.selectionEnd);
+    textarea.value = textBefore + char + textAfter;
+    textarea.selectionStart = cursorPos + 1;
+    textarea.selectionEnd = cursorPos + 1;
+
+    textarea.focus(); 
+
+    event.preventDefault();
+}
+
+
+document.addEventListener('click', function(event) {
+    var keyboard = document.getElementById('keyboard');
+    var textarea = document.getElementById('message');
+    var isKeyboardButton = event.target.closest('#keyboard .keyboard-row button');
+    
+    if (!textarea.contains(event.target) && !isKeyboardButton) {
+        keyboard.classList.add('hidden');
+    }
+});
+
+
+updateKeyboardCase();
+

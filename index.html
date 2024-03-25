@@ -168,9 +168,63 @@
                 
                 <div class="third-column">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <textarea id="message" name="message" rows="4" cols="50" onclick="showKeyboard()"></textarea>
                 </div>
                 
+                <div id="keyboard" class="keyboard hidden">
+                    <div class="keyboard-row">
+                        <button onclick="toggleCapsLock()">Caps Lock</button>
+                        <button onclick="insertCharacter('1')">1</button>
+                        <button onclick="insertCharacter('2')">2</button>
+                        <button onclick="insertCharacter('3')">3</button>
+                        <button onclick="insertCharacter('4')">4</button>
+                        <button onclick="insertCharacter('5')">5</button>
+                        <button onclick="insertCharacter('6')">6</button>
+                        <button onclick="insertCharacter('7')">7</button>
+                        <button onclick="insertCharacter('8')">8</button>
+                        <button onclick="insertCharacter('9')">9</button>
+                        <button onclick="insertCharacter('0')">0</button>
+                        <button onclick="insertCharacter('-')">-</button>
+                        <button onclick="insertCharacter('+')">+</button>
+                        <button onclick="insertCharacter('=')">=</button>
+                        <button onclick="insertCharacter('/')">/</button>
+                        <button onclick="insertCharacter('*')">*</button>
+                        <button onclick="insertCharacter('.')">.</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button onclick="insertCharacter('q')">q</button>
+                        <button onclick="insertCharacter('w')">w</button>
+                        <button onclick="insertCharacter('e')">e</button>
+                        <button onclick="insertCharacter('r')">r</button>
+                        <button onclick="insertCharacter('t')">t</button>
+                        <button onclick="insertCharacter('y')">y</button>
+                        <button onclick="insertCharacter('u')">u</button>
+                        <button onclick="insertCharacter('i')">i</button>
+                        <button onclick="insertCharacter('o')">o</button>
+                        <button onclick="insertCharacter('p')">p</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button onclick="insertCharacter('a')">a</button>
+                        <button onclick="insertCharacter('s')">s</button>
+                        <button onclick="insertCharacter('d')">d</button>
+                        <button onclick="insertCharacter('f')">f</button>
+                        <button onclick="insertCharacter('g')">g</button>
+                        <button onclick="insertCharacter('h')">h</button>
+                        <button onclick="insertCharacter('j')">j</button>
+                        <button onclick="insertCharacter('k')">k</button>
+                        <button onclick="insertCharacter('l')">l</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button onclick="insertCharacter('z')">z</button>
+                        <button onclick="insertCharacter('x')">x</button>
+                        <button onclick="insertCharacter('c')">c</button>
+                        <button onclick="insertCharacter('v')">v</button>
+                        <button onclick="insertCharacter('b')">b</button>
+                        <button onclick="insertCharacter('n')">n</button>
+                        <button onclick="insertCharacter('m')">m</button>
+                        <button onclick="insertCharacter(' ')">Spacebar</button>
+                    </div>
+                </div>
                 <button type="button" id="submitBtn">Submit</button>
                 <button type="button" id="clearBtn">Clear</button>
             </form>
